@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CartSystem</title>
+</head>
+<body>
+    <h2>Cart System</h2>
+   <button onclick="console.log(`Cart Quantity: ${cartqty}`)">View Qty</button>
+   <button onclick = "cartqty+=1;console.log(`Successfully Added +1`);console.log(`Cart Quantity: ${cartqty}`);
+   ">Add to Cart</button>
+   <button onclick = "cartqty+=2;console.log(`Successfully Added +2`);console.log(`Cart Quantity: ${cartqty}`);">+2</button>
+   <button onclick = "cartqty+=3;console.log(`Successfully Added +3`);console.log(`Cart Quantity: ${cartqty}`);">+3</button>
+   <button onclick = "cartqty=0;console.log(`Reset Successfull`);console.log(`Cart Quantity: ${cartqty}`);">Reset</button>
+  <script>
+     let cartqty = 0;
+  </script>
+  
+</body>
+</html>
