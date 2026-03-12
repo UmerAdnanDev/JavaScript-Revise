@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>rock|paper|scissors</title>
+</head>
+<style>
+  button{
+    padding: 10px 15px;color: white;border: none;border-radius: 15px; font-size: 1.5rem;margin: 15px;
+  }
+  .rock{
+    background:linear-gradient(45deg,rgb(241, 12, 12),black)
+  }
+  .paper{
+    background:linear-gradient(45deg,rgb(204, 207, 21),black)
+  }
+  .scissors{
+    background:linear-gradient(45deg,rgb(34, 238, 238),black)
+  }
+</style>
+<body>
+   <h2>Rock | Paper | Scissors Game I</h2>
+   <div>
+     <button class="rock" onclick="user_choice = `Rock`;
+     random  = Math.floor(Math.random()*(3))+1 ; console.log(random);
+     if(random == 1){ comp_choice = `Rock`;result = `It's a Draw`}
+     else if(random == 2){ comp_choice = `Paper`;result = `You Lost`}
+     else{ comp_choice = `Scissors`;result = `You Won`}
+     alert(`You choose: ${user_choice}\nComputer choose: ${comp_choice}\nResult:${result}`)"
+     >Rock</button>
+     <button class="paper" onclick="user_choice = `Paper`;random  = Math.floor(Math.random()*(3))+1 ; console.log(random);
+     if(random == 1){ comp_choice = `Rock`;result = `You Won`}
+     else if(random == 2){ comp_choice = `Paper`;result = `It's a Draw`}
+     else{ comp_choice = `Scissors`;result =`You Lost`}
+     alert(`You choose: ${user_choice}\nComputer choose: ${comp_choice}\nResult:${result}`)"
+     >Paper</button>
+     <button class="scissors" onclick="user_choice = `Scissors`;
+     random  = Math.floor(Math.random()*(3))+1 ; console.log(random);
+     if(random == 1){ comp_choice = `Rock`;result = `You Lost`}
+     else if(random == 2){ comp_choice = `Paper`;result = `You Won`}
+     else{ comp_choice = `Scissors`;result = `It's a Draw`}
+     alert(`You choose: ${user_choice}\nComputer choose: ${comp_choice}\nResult:${result}`)">Scissors</button>
+   </div>
+   <script src="rps1.js"></script>
+</body>
+</html>
