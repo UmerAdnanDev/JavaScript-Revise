@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo</title>
+  <style>
+    input{
+      border-radius: 15px;padding:10px;margin-right:5px;
+    }
+    .btn-red{
+      color: white;font-weight: bold;border: none;background: linear-gradient(45deg,rgb(168, 93, 93),rgb(192, 52, 52));padding:10px;border-radius: 25px;font-size: 1.1rem;margin:5px 0;
+    }
+    .btn-green{
+      color: white;font-weight: bold;border: none;background: linear-gradient(45deg,rgb(76, 175, 81),rgb(11, 240, 30));padding:10px;border-radius: 25px;font-size: 1.1rem;
+    }
+    .grid{
+      display: grid;
+      grid-template-columns:200px 150px 100px ;
+    }
+  </style>
+</head>
+<body>
+      <h1>Todo List</h1>
+      <div class = "grid">
+      <input class="js-input" type="text" placeholder="Task Todo" onkeydown="enter(event)">
+      <input class="js-date" type="date">
+      <button class="btn-green" onclick="addtoList()">Add</button>
+      </div>
+      <div class = "js-list">
+      </div>
+    </body>
+    <script src ='todo3.js'>
+    </script>
+</html>
