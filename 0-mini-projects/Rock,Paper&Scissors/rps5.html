@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>rock|paper|scissors</title>
+</head>
+<style>
+  button{
+    padding:20px;color: white;border:15 rgb(161, 202, 214);border-radius: 50%; font-size:5rem;margin: 15px;box-sizing: border-box;cursor: pointer;
+  }
+  .rock{
+    background:linear-gradient(45deg,rgb(241, 12, 12),black)
+  }
+  .paper{
+    background:linear-gradient(45deg,rgb(204, 207, 21),black)
+  }
+  .scissors{
+    background:linear-gradient(45deg,rgb(34, 238, 238),black)
+  }
+  .reset{
+     background:linear-gradient(45deg,rgb(123, 128, 128),rgb(63, 62, 62))
+  }
+  div , h2{
+    display: flex;justify-content: center;  }
+  h2{
+    font-size:1.6rem;font-family: monospace;color: rgb(96, 125, 189);
+  }
+  
+</style>
+<body>
+    <h2>Rock | Paper | Scissors Game V</h2>
+   <div>
+     <button class="rock" onclick="play(`Rock`)">✊</button>
+     <button class="paper" onclick="play(`Paper`)">📃</button>
+     <button class="scissors" onclick="play(`Scissors`)">✂</button>
+     <button class ="reset" onclick="reset()">♻</button>
+   </div>
+     <h2 class="js-y"></h2>
+     <h2 class="js-c">Have Fun Playing!</h2>
+     <h2 class = "js-r"></2>
+     <h2 class = "js-s"></2>
+   <script src="rps5.js">
+   </script>
+</body>
+</html>
